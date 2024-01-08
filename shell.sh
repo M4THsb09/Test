@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ejecuta el script de Bash de manera segura
-    $output = shell_exec('bash tu_script_bash.sh 2>&1');
+    $output = shell_exec('bash test.sh 2>&1');
     
     // Devuelve la salida del script como respuesta JSON
     header('Content-Type: application/json');
