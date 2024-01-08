@@ -3,15 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejecutar Script Bash con PHP</title>
+  <title>Ejecutar Script Bash con Parámetros</title>
 </head>
 <body>
 
-  <h1>Ejecutar Script Bash con PHP</h1>
+  <h1>Ejecutar Script Bash con Parámetros</h1>
 
-  <form action="shell.php" method="post">
+  <form action="ejecutar-script-con-parametros.php" method="post">
+    <label for="primercampo">Primer Campo:</label>
+    <input type="text" name="primercampo" id="primercampo" required><br>
+
+    <label for="segundocampo">Segundo Campo:</label>
+    <input type="text" name="segundocampo" id="segundocampo" required><br>
+
     <input type="submit" value="Ejecutar Script Bash">
   </form>
 
 </body>
 </html>
+
